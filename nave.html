@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="es-EC">
+<head>
+	<meta charset="UTF-8">
+	<title>ENTERPRISE :: LEVELAP</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="elements/meter.css">
+	<link rel="stylesheet" href="elements/checkbox.css">
+	<link rel="stylesheet" href="elements/range.css">
+
+    <script src="src/nave.js"></script>
+    <script src="src/reactor.js"></script>
+    <script src="src/inyector.js"></script>
+	<script src="src/funciones.js" ></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<input type="button" onClick="test()" value="IR A LOS TEST" class="boton" />
+		</nav>
+	</header>
+	<section style="padding: 120px;" align="center">
+		<section id="motor" align="center">
+			<fieldset class="inyector">
+				<legend>INYECTOR UNO</legend>
+				<meter value="0" id="inyectorUno"></meter>
+				<input type="text" class="entradas" maxlength="3" id="txtDano1" onkeyPress="cambiarValor('inyectorUno', 'txtDano1')" placeholder="% Daño" />
+				<br><label style="color: #73d216" id="lblFlujo1"></label>
+			</fieldset>
+			<fieldset class="inyector">
+				<legend>INYECTOR DOS</legend>
+				<meter value="0" id="inyectorDos"></meter>
+				<input type="text" class="entradas" maxlength="3" id="txtDano2" onkeyPress="cambiarValor('inyectorDos', 'txtDano2')" placeholder="% Daño" />
+				<br><label style="color: #73d216" id="lblFlujo2"></label>
+			</fieldset>
+			<fieldset class="inyector">
+				<legend>INYECTOR TRES</legend>
+				<meter value="0" id="inyectorTres"></meter>
+				<input type="text" class="entradas" maxlength="3" id="txtDano3" onkeyPress="cambiarValor('inyectorTres', 'txtDano3')" placeholder="% Daño" />
+				<br><label style="color: #73d216" id="lblFlujo3"></label>
+			</fieldset>
+			<div style="margin: 30px 0 0 0;">
+				<label for="">VELOCIDAD DE LA LUZ</label><br><br>
+				<br><input type="range" value="50" id="rgVelocidad" onChange="velocidad()" />
+				<label id="lblVelocidad">100%</label>
+			</div>
+			<div style="margin: 40px 0 0 0;"><input type="checkbox" id="chkCalcular" onChange="calcular()" data-icon1="OFF" data-icon2="ON" /></div>
+			<div style="margin: 40px 0 0 0;">
+				<label id="lblVelocidad">TIEMPO DE FUNCIONAMIENTO</label>
+				<input type="text" class="entradas" id="txtTiempo" readOnly />
+				<label>Minutos</label>
+			</div>
+		</section>	
+	</section>
+	<footer></footer>
+</body>
+</html>
