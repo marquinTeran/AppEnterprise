@@ -2,15 +2,6 @@ function test() {
 	location.href = 'nave.jasmine.test.html';
 }
 
-function propuesto() {
-	location.href = 'propuesto.html';
-}
-
-function nave() {
-	location.href = 'nave.html';
-}
-
-
 function cambiarValor(idBarra, idCampo){
 	document.getElementById(idBarra).value = (document.getElementById(idCampo).value/10);
 }
@@ -36,11 +27,4 @@ function calcular(){
 			document.getElementById("lblFlujo"+i).innerHTML = arrayResultados['flujo'][i-1];
 		}
 	}
-}
-
-function init(){
-    inyector.flujo_plasma = 100;
-    nave.velocidad_requerida = 100;
-    reactor.porcentaje_energia = 300;
-    reactor.numero_inyectores_habiles = 3;
 }

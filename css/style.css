@@ -1,3 +1,5 @@
+*:focus {outline: none;}
+
 html {
 	background-color: hsl(200,5%,15%);
 	background-size: 5px 5px;
@@ -16,13 +18,13 @@ header {
 	padding: 20px; 
 	width: 100%;
 	background: rgba(124, 130, 131, 0.2);
+	z-index: 1000000;
     }
 
 .boton {
-	display: block;
+	display: inline-block;
 	top: 6px;
 	right: 6px;
-	width: 100px;
 	height: 30px;
 	border: 1px solid #115099;
 	-webkit-border-radius: 4px;
@@ -53,7 +55,7 @@ header {
 	cursor: pointer;
 }
 
-section#motor {
+section#motor, .controles {
 	padding: 65px 0;
 	border-top: 1px solid rgba(255,255,255,0.1);
 	border-right: 1px solid rgba(20,20,20,.7);
@@ -69,7 +71,7 @@ section#motor {
 	-webkit-box-shadow: 0 0 12px rgba(0,0,0,0.4);
 	-moz-box-shadow: 0 0 12px rgba(0,0,0,0.4);
 	box-shadow: 0 0 12px rgba(0,0,0,0.4);
-	width: 65%;
+	width: 100%;
 }
 
 .inyector {

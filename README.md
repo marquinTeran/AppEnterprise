@@ -18,6 +18,4 @@ Requirements:
 Authors:
 -----------------
 
-- Christian Dávalos Carrera  (https://www.facebook.com/christian.davaloscarrera)
-
 - marquinTeran  (http://about.me/marquinTeran)
